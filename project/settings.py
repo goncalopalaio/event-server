@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['localhost', 'events-rep.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'reporting.apps.ReportingConfig',
     'django.contrib.gis',
     'django.contrib.admin',
     'django.contrib.auth',
