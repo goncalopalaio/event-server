@@ -9,6 +9,7 @@ https://events-rep.herokuapp.com/v1/
 The admin interface can be reached at:
 
 https://events-rep.herokuapp.com/admin/
+user:admin password: password1234
 
 A postman collection with a few filtering queries is shared here:
 
