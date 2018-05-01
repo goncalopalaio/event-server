@@ -19,6 +19,9 @@ Supported:
 - Filter by author
 - Filter by position and distance
 
+
+Mobile client at: https://github.com/goncalopalaio/event-mobile
+
 ## A few notes
 
 ### Current state of development
