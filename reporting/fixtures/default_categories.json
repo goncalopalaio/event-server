@@ -1,0 +1,56 @@
+[
+    {
+        "model": "reporting.category",
+        "fields": {
+            "title": "default",
+            "description": "",
+            "created": "2018-05-01T10:41:01.767Z",
+            "updated": "2018-05-01T10:41:01.767Z"
+        }
+    },
+    {
+        "model": "reporting.category",
+        "fields": {
+            "title": "CONSTRUCTION",
+            "description": "planned road work",
+            "created": "2018-05-01T14:13:31.378Z",
+            "updated": "2018-05-01T14:13:31.378Z"
+        }
+    },
+    {
+        "model": "reporting.category",
+        "fields": {
+            "title": "SPECIAL_EVENT",
+            "description": "special events (fair, sport event, etc.)",
+            "created": "2018-05-01T14:13:43.507Z",
+            "updated": "2018-05-01T14:13:43.507Z"
+        }
+    },
+    {
+        "model": "reporting.category",
+        "fields": {
+            "title": "INCIDENT",
+            "description": "accidents and other unexpected events",
+            "created": "2018-05-01T14:13:54.732Z",
+            "updated": "2018-05-01T14:13:54.732Z"
+        }
+    },
+    {
+        "model": "reporting.category",
+        "fields": {
+            "title": "WEATHER_CONDITION",
+            "description": "weather condition affecting the road",
+            "created": "2018-05-01T14:14:02.842Z",
+            "updated": "2018-05-01T14:14:02.842Z"
+        }
+    },
+    {
+        "model": "reporting.category",
+        "fields": {
+            "title": "ROAD_CONDITION",
+            "description": "status of the road that might affect travellers (potholes, bad pavement, etc.)",
+            "created": "2018-05-01T14:14:13.237Z",
+            "updated": "2018-05-01T14:14:13.237Z"
+        }
+    }
+]
