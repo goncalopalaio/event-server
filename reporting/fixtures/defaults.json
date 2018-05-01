@@ -52,5 +52,26 @@
             "created": "2018-05-01T14:14:13.237Z",
             "updated": "2018-05-01T14:14:13.237Z"
         }
+    },
+    {
+        "model": "reporting.eventstate",
+        "pk": 1,
+        "fields": {
+            "name": "to_validate"
+        }
+    },
+    {
+        "model": "reporting.eventstate",
+        "pk": 2,
+        "fields": {
+            "name": "valid"
+        }
+    },
+    {
+        "model": "reporting.eventstate",
+        "pk": 3,
+        "fields": {
+            "name": "solved"
+        }
     }
 ]
