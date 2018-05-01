@@ -83,6 +83,7 @@ Enable the extension by connecting to the postgres command line interface and en
 ```python
 create extension postgis;
 ```
+(using a migration operation would be a better option)
 
 Finally start the server
 
