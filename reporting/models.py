@@ -11,7 +11,13 @@ class Category(models.Model):
 	description = models.CharField(max_length=200, default = '')
 	created = models.DateTimeField(auto_now_add=True)
 	updated = models.DateTimeField(auto_now=True)
-		
+
+class EventState(models.Model):
+	"""
+	Describes the state of an event. Default value is to_validate. Other possible values are valid, solved.
+	"""	 
+	name = models.CharField(max_length = 30)
+
 class Event(models.Model):
 	"""
 	Describes an event
@@ -25,3 +31,4 @@ class Event(models.Model):
 	updated = models.DateTimeField(auto_now=True)
 	location = models.PointField(help_text="POINT(latitude longitude)")
 	author = models.CharField(max_length = 30) # temporary field
+	state = models.ForeignKey(EventState, on_delete=models.PROTECT, default = 1)

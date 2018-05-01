@@ -2,8 +2,8 @@ from django.http import HttpResponse
 from rest_framework import viewsets, generics
 from django.contrib.gis.measure import D
 from django.contrib.gis.geos import fromstr
-from .models import Event, Category
-from .serializers import EventSerializer, CategorySerializer
+from .models import Event, EventState, Category
+from .serializers import EventSerializer, EventStateSerializer, CategorySerializer
 
 def index(request):
     return HttpResponse("Hello from the default view.")
@@ -53,4 +53,11 @@ class CategoryViewSet(viewsets.ModelViewSet):
 	"""
 	queryset = Category.objects.all()
 	serializer_class = CategorySerializer
+
+class EventStateViewSet(viewsets.ReadOnlyModelViewSet):
+	"""
+	Endpoint that allows categories to be viewed or edited
+	"""
+	queryset = EventState.objects.all()
+	serializer_class = EventStateSerializer
 

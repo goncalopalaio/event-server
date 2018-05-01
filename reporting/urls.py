@@ -5,6 +5,7 @@ from . import views
 
 router = routers.DefaultRouter()
 router.register(r'events', views.EventViewSet)
+router.register(r'states', views.EventStateViewSet)
 router.register(r'categories', views.CategoryViewSet)
 
 urlpatterns = [
