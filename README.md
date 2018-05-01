@@ -13,6 +13,9 @@ https://events-rep.herokuapp.com/admin/
 ## A few notes
 
 ### Current state of development
+
+Developing into master branch directly since I'm the only developer at the time. Pull requests should be used going forward.
+
 This project uses the Django REST framework and at this time, the web browsable API feature is enabled and exposed without any kind of authentication. This is a feature that should be disabled later, but makes it easy to explore the API using a web browser by opening 
 https://events-rep.herokuapp.com/v1/ 
 
@@ -63,6 +66,7 @@ The full path to the postgres database is the following:
 local_database_path = "postgres://{}:{}@localhost:5432/event_reporting_db".format(os.environ["DJANGO_EVENT_USER"], os.environ["DJANGO_EVENT_PW"])
 ```
 A database called "event_reporting_db" must be created (CREATE DATABASE event_reporting_db)
+
 The user and password of the database are exposed to the application through environment variables:
 
 ```python
