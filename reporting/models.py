@@ -24,3 +24,4 @@ class Event(models.Model):
 	created = models.DateTimeField(auto_now_add=True)
 	updated = models.DateTimeField(auto_now=True)
 	location = models.PointField(help_text="POINT(latitude longitude)")
+	author = models.CharField(max_length = 30) # temporary field
