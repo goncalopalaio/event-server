@@ -27,6 +27,6 @@ class Event(models.Model):
 	category = models.ForeignKey(Category, on_delete=models.CASCADE, default = 1)
 	created = models.DateTimeField(auto_now_add=True)
 	updated = models.DateTimeField(auto_now=True)
-	location = models.PointField(help_text="POINT(latitude longitude)")
+	location = models.PointField(help_text="POINT(longitude latitude)")
 	author = models.CharField(max_length = 30) # temporary field
 	state = models.ForeignKey(EventState, on_delete=models.PROTECT, default = 1)
