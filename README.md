@@ -54,7 +54,14 @@ https://github.com/cyberdelia/heroku-geo-buildpack.git
 https://github.com/heroku/heroku-buildpack-apt
 ```
 
+Load default data, such as categories and event states:
+
+```python
+heroku run python  manage.py loaddata defaults.json
+```
+
 The default path to the postgres database is being used so no further configuration is needed.
+
 
 ### How to run locally
 
@@ -95,6 +102,12 @@ Enable the extension by connecting to the postgres command line interface and en
 create extension postgis;
 ```
 (using a migration operation would be a better option)
+
+Load default data:
+
+```python
+python manage.py loaddata defaults.json
+```
 
 Finally start the server
 
