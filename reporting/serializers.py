@@ -1,10 +1,18 @@
 from rest_framework import serializers
-from .models import Event
+from .models import Event, Category
 
-class EventSerializer(serializers.HyperlinkedModelSerializer):
+class CategorySerializer(serializers.ModelSerializer):
+	"""
+	Serializer for events
+	"""
+	class Meta:
+		model = Category
+		fields= ('id', 'title', 'description')
+
+class EventSerializer(serializers.ModelSerializer):
 	"""
 	Serializer for events
 	"""
 	class Meta:
 		model = Event
-		fields= ('url','description')
+		fields= ('url','description', 'category')
