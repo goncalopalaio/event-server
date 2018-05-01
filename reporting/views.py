@@ -25,6 +25,9 @@ class EventViewSet(viewsets.ModelViewSet):
 		if category_id is not None:
 			queryset = queryset.filter(category_id = category_id)
 
+		author_name = self.request.query_params.get('author', None)
+		if author_name is not None:
+			queryset = queryset.filter(author = author_name)
 		
 		queryset = self.filter_by_distance(self.request.query_params, queryset)
 		return queryset
