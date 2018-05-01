@@ -10,6 +10,10 @@ The admin interface can be reached at:
 
 https://events-rep.herokuapp.com/admin/
 
+A postman collection with a few queries is shared here:
+
+https://documenter.getpostman.com/view/4266504/RW1dExc8
+
 ## A few notes
 
 ### Current state of development
