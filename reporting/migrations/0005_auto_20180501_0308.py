@@ -27,6 +27,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='event',
             name='category',
-            field=models.ForeignKey(default=reporting.models.Event.get_default_category, on_delete=django.db.models.deletion.CASCADE, to='reporting.Category'),
+            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='reporting.Category'),
         ),
     ]

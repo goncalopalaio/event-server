@@ -22,11 +22,9 @@ class Event(models.Model):
 	"""
 	Describes an event
 	"""
-	def get_default_category():
-		return Category.objects.get_or_create(title = "default", created=datetime.datetime.now(tz=timezone.utc))[0].id
-
+	
 	description = models.CharField(max_length = 200)
-	category = models.ForeignKey(Category, on_delete=models.CASCADE, default = get_default_category)
+	category = models.ForeignKey(Category, on_delete=models.CASCADE, default = 1)
 	created = models.DateTimeField(auto_now_add=True)
 	updated = models.DateTimeField(auto_now=True)
 	location = models.PointField(help_text="POINT(latitude longitude)")
