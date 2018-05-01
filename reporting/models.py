@@ -1,6 +1,7 @@
 from django.db import models
 import datetime
 from django.utils import timezone
+from django.contrib.gis.db import models
 
 class Category(models.Model):
 	"""
@@ -22,3 +23,4 @@ class Event(models.Model):
 	category = models.ForeignKey(Category, on_delete=models.CASCADE, default = get_default_category)
 	created = models.DateTimeField(auto_now_add=True)
 	updated = models.DateTimeField(auto_now=True)
+	location = models.PointField(help_text="POINT(latitude longitude)")
