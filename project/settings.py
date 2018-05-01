@@ -74,6 +74,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'project.wsgi.application'
 
+# Configure Django App for Heroku.
+django_heroku.settings(locals())
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
@@ -136,6 +138,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
-# Configure Django App for Heroku.
-django_heroku.settings(locals())
