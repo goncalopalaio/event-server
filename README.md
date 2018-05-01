@@ -1,24 +1,32 @@
 # event-server
 
 Backend that provides a thirdparty to report events.
-
-Currently an event is defined as:
-Event
-  - title
-  - description
-  - created (date of creation)
-  - updated (date of last update)
-  - Category
-    - title
-    - description
-    - created (date of creation)
-    - updated (date of last update)
     
 The REST api is exposed through:
 
-remotely: https://events-rep.herokuapp.com/v1/
+https://events-rep.herokuapp.com/v1/
 
-locally: http://localhost:8000/v1/
+The admin interface can be reached at:
+
+https://events-rep.herokuapp.com/admin/
+
+## A few notes
+
+### Current state of development
+This project uses the Django REST framework and at this time, the web browsable API feature is enabled and exposed without any kind of authentication. This is a feature that should be disabled later, but makes it easy to explore the API using a web browser by opening 
+https://events-rep.herokuapp.com/v1/ 
+
+Currently there's a few pydoc strings but nothing too relevant.
+
+Haven't created any tests at the time for the REST api but this is a point to keep in mind going forward.
+
+### Missing functionality
+
+An access key or auth2 should be implemented.  There's no user authentication implemented at this time. The events can be changed by anyone.
+
+### About the mobile client
+
+Available at https://github.com/goncalopalaio/event-mobile
 
 ### How to deploy project in Heroku
 
