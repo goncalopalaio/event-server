@@ -10,9 +10,14 @@ The admin interface can be reached at:
 
 https://events-rep.herokuapp.com/admin/
 
-A postman collection with a few queries is shared here:
+A postman collection with a few filtering queries is shared here:
 
 https://documenter.getpostman.com/view/4266504/RW1dExc8
+
+Supported:
+- Filter by category
+- Filter by author
+- Filter by position and distance
 
 ## A few notes
 
@@ -22,6 +27,8 @@ Developing into master branch directly since I'm the only developer at the time.
 
 This project uses the Django REST framework and at this time, the web browsable API feature is enabled and exposed without any kind of authentication. This is a feature that should be disabled later, but makes it easy to explore the API using a web browser by opening 
 https://events-rep.herokuapp.com/v1/ 
+
+DEBUG mode should be disabled.
 
 Currently there's a few pydoc strings but nothing too relevant.
 
